@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arun's 1st Website</title>
+        <link rel="icon" href="boy.png">
+
+
+    </head>
+    <body bgcolor="black" style="color: #ffffff;">
+        
+  
+
+    <center>
+    <h1>
+  <span class="word">Arun</span>
+  <span class="word">Selvan's</span>
+  <span class="word">1st</span>
+  <span class="word">Website😉</span>
+</h1>
+
+<style>
+  .word {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeEach 0.8s ease forwards;
+  }
+
+  .word:nth-child(1) { animation-delay: 0.2s; }
+  .word:nth-child(2) { animation-delay: 0.2s; }
+  .word:nth-child(3) { animation-delay: 0.2s; }
+  .word:nth-child(4) { animation-delay: 0.2s; }
+
+  @keyframes fadeEach {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+<p class="fade-in-delay">"From Circuits to Code: An Engineer's Journey into Development"</p>
+
+<style>
+  .fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: 0.5s; /* adjust delay as needed */
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<hr class="hr-grow-full">
+
+<style>
+  .hr-grow-full {
+    width: 0;
+    height: 2px;
+    margin: 40px auto;
+    background: white;
+    border: none;
+    animation: growWidthFull 1.5s ease forwards;
+  }
+
+  @keyframes growWidthFull {
+    to {
+      width: 100%;
+    }
+  }
+</style>
+
+ <h3 class="fade-in-left">About Me:</h3>
+
+<style>
+  .fade-in-left {
+    text-align: left;
+    opacity: 0;
+    animation: fadeInLeft 2.5s ease forwards;
+  }
+
+  @keyframes fadeInLeft {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+   <p class="paragraph-animate">
+  I hold a Diploma in Electrical and Electronics Engineering and started my career as a Railway Signal Engineer. After a year in that role, I transitioned into video editing at a software company, where I discovered a strong interest in how software is built. That curiosity quickly grew into a passion for development. Now, I'm learning to code and exploring the world of software development, excited to grow and build meaningful projects along the way.
+</p>
+
+<style>
+  .paragraph-animate {
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 2s ease forwards;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+   
+    <br> <br>
+ <img id="profile-img" src="Hai.jpeg" width="500px" class="img-fade-zoom" onclick="toggleImage()">
+
+<style>
+  .img-fade-zoom {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeZoom 1s ease forwards;
+    cursor: pointer;
+  }
+
+  @keyframes fadeZoom {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+
+<script>
+  let isOriginal = true;
+
+  function toggleImage() {
+    const img = document.getElementById('profile-img');
+
+    // Swap image first
+    img.src = isOriginal ? 'NewImage.jpeg' : 'Hai.jpeg';
+    isOriginal = !isOriginal;
+
+    // Force animation to replay
+    img.classList.remove('img-fade-zoom');      // Remove animation class
+    void img.offsetWidth;                       // Force browser reflow
+    img.classList.add('img-fade-zoom');         // Re-add animation class
+  }
+</script>
+
+<p class="tap-hint-up">Please Tap on Image <span class="emoji-up">👆</span></p>
+
+<style>
+  .tap-hint-up {
+    opacity: 0;
+    animation: fadeBounceOnce 1.5s ease forwards;
+    animation-delay: 0.5s;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+
+  .emoji-up {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px) scale(0.8);
+    animation: emojiPopUp 0.6s ease forwards;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes fadeBounceOnce {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes emojiPopUp {
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>
+
+
+  <h2 class="follow-header">Follow me on Instagram</h2>
+
+<style>
+  .follow-header {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease-out forwards, pulseLoop 2s ease-in-out infinite;
+    animation-delay: 0.5s, 2s; /* entrance delay + loop delay */
+    text-align: center;
+    color: white; /* change as needed */
+    font-family: sans-serif;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseLoop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+</style>
+
+
+<div class="insta-buttons">
+  <a href="https://www.instagram.com/arun._.selvan?igsh=MXVobHl3a2Z1OTVjcw==" target="_blank" class="insta-btn">
+    📸 Personal ID
+  </a>
+  <a href="https://www.instagram.com/anbudan._.arun?igsh=MXZjbWtna282dXZhMg==" target="_blank" class="insta-btn">
+    🎥 Vlog ID
+  </a>
+</div>
+
+<style>
+  .insta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .insta-btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    animation: fadeInUp 1.2s ease forwards;
+  }
+
+  .insta-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(225, 48, 108, 0.4);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+   <hr class="hr-grow">
+
+<style>
+  .hr-grow {
+    width: 0;
+    height: 2px;
+    margin: 40px auto;
+    background: white;
+    border: none;
+    animation: growWidth 2s ease forwards;
+  }
+
+  @keyframes growWidth {
+    to {
+      width: 100%;
+    }
+  }
+</style>
+
+  <h2 class="end-quote">"This is just the start — I’ve got big plans to level it up like a pro."</h2>
+<p class="thanks-msg">Thanks for visiting my website</p>
+
+<style>
+  .end-quote {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 2s ease forwards;
+    animation-delay: 0.5s;
+  }
+
+  .thanks-msg {
+    text-align: center;
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 2s ease forwards;
+    animation-delay: 1.2s;
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+    
+  </body>
+  
+    </center>
+    <body>
+        
+
+    </body>
+</html>
